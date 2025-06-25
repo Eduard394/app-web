@@ -12,24 +12,20 @@ import logo from '../assets/12.jpg'
 
 <template>
 <body>
-    <!-- Sale Banner -->
     <div class="sale-banner">
         HOT SALE -30% EN SANDALIAS
     </div>
 
-    <!-- Top Navigation -->
     <nav class="top-nav">
         <div class="top-nav-content">
-            <a href="#">DIRECTORIO DE TIENDAS</a>
+            <a href="#" class="initial">DIRECTORIO DE TIENDAS</a>
             <a href="#">SERVICIO AL CLIENTE</a>
             <a href="#">MI CUENTA</a>
         </div>
     </nav>
 
-    <!-- Main Header -->
     <header class="main-header">
         <div class="header-content">
-            <!-- Logo Section -->
             <div class="logo-section">
                 <div class="">
                   <img :src="logo" alt="Logo" class="logo-img" />
@@ -39,9 +35,7 @@ import logo from '../assets/12.jpg'
                 </div>
             </div>
 
-            <!-- Right Section -->
             <div class="right-section">
-                <!-- Search Bar -->
                 <div class="search-container">
                     <div class="search-bar">
                         <input type="text" class="search-input" placeholder="BUSCAR">
@@ -54,12 +48,10 @@ import logo from '../assets/12.jpg'
                     </div>
                 </div>
 
-                <!-- Free Shipping -->
                 <div class="free-shipping">
                     ENVÍO GRATIS PARA PEDIDOS SUPERIORES A $300.000
                 </div>
 
-                <!-- Cart -->
                 <a href="#" class="cart-link">
                     <span class="cart-icon">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
@@ -115,12 +107,12 @@ import logo from '../assets/12.jpg'
 
         /* Top Navigation Links */
         .top-nav {
-            background-color: #e8e8e8;
+            background-color: #acacac;
             padding: 8px 0;
         }
 
         .top-nav-content {
-            max-width: 1200px;
+            max-width: 80%;
             margin: 0 auto;
             display: flex;
             justify-content: flex-end;
@@ -128,12 +120,20 @@ import logo from '../assets/12.jpg'
             padding: 0 20px;
             gap: 20px;
         }
+        .header-content,
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+            }
+
 
         .top-nav a {
             color: #666;
             text-decoration: none;
             font-size: 12px;
-            font-weight: 500;
+            font-weight: 800;
             text-transform: uppercase;
             transition: color 0.3s ease;
         }
@@ -150,12 +150,9 @@ import logo from '../assets/12.jpg'
         }
 
         .header-content {
-            max-width: 100%;
-            margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
+            align-items: flex-start; /* <--- cambia de center a flex-start */
         }
 
         /* Logo Section */
@@ -198,7 +195,6 @@ import logo from '../assets/12.jpg'
             align-items: center;
             background-color: #f8f8f8;
             border: 1px solid #ddd;
-            border-radius: 25px;
             padding: 0;
             transition: border-color 0.3s ease;
         }
