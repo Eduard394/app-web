@@ -15,10 +15,10 @@
       <div class="footer-column">
         <h3>SERVICIO AL CLIENTE</h3>
         <ul>
-          <li><a href="#">CONT¡CTENOS</a></li>
+          <li><a href="#">CONT√ÅCTENOS</a></li>
           <li><a href="#">CAMBIOS Y DEVOLUCIONES</a></li>
-          <li><a href="#">POLÕTICAS DE LA TIENDA</a></li>
-          <li><a href="#">POLÕTICAS DE DATOS</a></li>
+          <li><a href="#">POL√çTICAS DE LA TIENDA</a></li>
+          <li><a href="#">POL√çTICAS DE DATOS</a></li>
         </ul>
       </div>
       <div class="footer-column">
@@ -37,7 +37,7 @@
       </div>
       <div class="footer-column">
         <h3>NEWSLETTER</h3>
-        <p>RegÌstrate para ser el primero en recibir nuestras noticias</p>
+        <p>Reg√≠strate para ser el primero en recibir nuestras noticias</p>
         <div class="newsletter">
           <input type="email" placeholder="E-MAIL" />
           <button>?</button>
@@ -49,12 +49,12 @@
     <div class="footer-bottom">
       <span>Desarrollado por:</span>
       <!-- <img src="/images/rise.png" alt="rise" />
-      <span>TecnologÌa:</span>
+      <span>Tecnolog√≠a:</span>
       <img src="/images/vtex.png" alt="vtex" />
       <span>Certificado por:</span>
       <img src="/images/pcidss.png" alt="pci" />
       <img src="/images/digicert.png" alt="digicert" />
-      <span>MÈtodos de pago:</span>
+      <span>M√©todos de pago:</span>
       <img src="/images/visa.png" alt="visa" />
       <img src="/images/payu.png" alt="payu" />
       <img src="/images/baloto.png" alt="baloto" />

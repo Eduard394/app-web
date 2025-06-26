@@ -16,7 +16,7 @@
     </div>
 
     <div class="cart-fav-container">
-      <button class="add-to-cart" @click="addCart">A—ADIR AL CARRITO</button>
+      <button class="add-to-cart" @click="addCart">A√ëADIR AL CARRITO</button>
       <i class="fas fa-heart heart-icon"
         :style="{ color: isFavorite ? 'red' : 'gray' }"
         @click="isFavorite = !isFavorite">
@@ -77,10 +77,10 @@ const addCart = () => {
 }
 .cart-fav-container {
   display: flex;
-  justify-content: space-between; /* ? separa a los extremos */
+  justify-content: space-between; /* ‚Üê separa a los extremos */
   align-items: center;
-  width: 100%; /* o un ancho especÌfico como 300px */
-  max-width: 400px; /* ajusta seg˙n el diseÒo */
+  width: 100%; /* o un ancho espec√≠fico como 300px */
+  max-width: 400px; /* ajusta seg√∫n el dise√±o */
   margin-top: 20px;
 }
 

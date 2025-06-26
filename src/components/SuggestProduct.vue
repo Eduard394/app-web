@@ -3,7 +3,7 @@
     <h2 class="titulo">PRODUCTOS RECOMENDADOS</h2>
     <div class="linea"></div>
     <div class="slider-wrapper">
-      <button class="slider-btn prev" @click="prevSlide" :disabled="inicio === 0">?</button>
+      <button class="slider-btn prev" @click="prevSlide" :disabled="inicio === 0">‹</button>
       <div class="slider-container">
         <div class="slider" :style="{ transform: `translateX(-${inicio * anchoCard}px)` }">
           <div v-for="shoe in shoes" :key="shoe.nombre" class="card">
@@ -13,7 +13,7 @@
           </div>
         </div>
       </div>
-      <button class="slider-btn next" @click="nextSlide" :disabled="inicio + visibleCards >= shoes.length">?</button>
+      <button class="slider-btn next" @click="nextSlide" :disabled="inicio + visibleCards >= shoes.length">›</button>
     </div>
   </section>
 </template>

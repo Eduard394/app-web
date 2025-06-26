@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="free-shipping">
-                    ENV�O GRATIS PARA PEDIDOS SUPERIORES A $300.000
+                    ENVÍO GRATIS PARA PEDIDOS SUPERIORES A $300.000 
                 </div>
 
                 <a href="#" class="cart-link">

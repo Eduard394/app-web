@@ -3,7 +3,7 @@
     <h3>DETALLES DE PRODUCTO</h3>
     <p>{{ description }}</p>
 
-    <h3>TECNOLOGÕAS</h3>
+    <h3>TECNOLOG√çAS</h3>
     <p>{{ technology }}</p>
   </div>
 </template>
