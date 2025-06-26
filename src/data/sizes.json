@@ -1,0 +1,42 @@
+[
+    {
+        "talla": "5",
+        "disponible": true
+    },
+    {
+        "talla": "5.5",
+        "disponible": false
+    },
+    {
+        "talla": "6",
+        "disponible": true
+    },
+    {
+        "talla": "6.5",
+        "disponible": true
+    },
+    {
+        "talla": "7",
+        "disponible": false
+    },
+    {
+        "talla": "7.5",
+        "disponible": true
+    },
+    {
+        "talla": "8",
+        "disponible": true
+    },
+    {
+        "talla": "8.5",
+        "disponible": false
+    },
+    {
+        "talla": "9",
+        "disponible": true
+    },
+    {
+        "talla": "9.5",
+        "disponible": false
+    }
+]

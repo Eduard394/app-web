@@ -1,14 +1,18 @@
 <template>
   <div class="gallery">
-    <img :src="selectedImage" class="main-image" />
+    <div class="main-image-container">
+      <img :src="selectedImage" class="main-image" />
+    </div>
     <div class="thumbnails">
-      <img
+      <div
+        class="thumbnail-container"
         v-for="(img, i) in images"
         :key="i"
-        :src="img"
         :class="{ active: selectedImage === img }"
         @click="selectedImage = img"
-      />
+      >
+        <img :src="img" />
+      </div>
     </div>
   </div>
 </template>
@@ -28,25 +32,52 @@ watch(() => props.images, (newImgs) => {
   flex: 1;
   text-align: center;
 }
+
+.main-image-container {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .main-image {
   width: 100%;
-  max-width: 400px;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
+
 .thumbnails {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 15px;
 }
-.thumbnails img {
+
+.thumbnail-container {
   width: 60px;
   height: 60px;
-  object-fit: contain;
-  cursor: pointer;
+  overflow: hidden;
   border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
 }
-.thumbnails img.active {
+
+.thumbnail-container.active {
   border-color: #8b5a5c;
+}
+
+.thumbnail-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

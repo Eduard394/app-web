@@ -2,7 +2,6 @@
   <section class="recomendados">
     <h2 class="titulo">PRODUCTOS RECOMENDADOS</h2>
     <div class="linea"></div>
-
     <div class="slider-wrapper">
       <button class="slider-btn prev" @click="prevSlide" :disabled="inicio === 0">?</button>
       <div class="slider-container">
@@ -175,6 +174,7 @@ onBeforeMount (() => {
 
 <style scoped>
 .recomendados {
+  margin-left: 40px;
   text-align: center;
   padding: 2rem 1rem;
   overflow: hidden;

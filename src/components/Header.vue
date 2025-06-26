@@ -1,15 +1,3 @@
-<script setup>
-import { ref } from 'vue'
-
-defineProps({
-  msg: String,
-})
-
-const count = ref(0)
-import logo from '../assets/12.jpg'
-
-</script>
-
 <template>
 <body>
     <div class="sale-banner">
@@ -49,7 +37,7 @@ import logo from '../assets/12.jpg'
                 </div>
 
                 <div class="free-shipping">
-                    ENVÍO GRATIS PARA PEDIDOS SUPERIORES A $300.000
+                    ENVï¿½O GRATIS PARA PEDIDOS SUPERIORES A $300.000
                 </div>
 
                 <a href="#" class="cart-link">
@@ -60,7 +48,7 @@ import logo from '../assets/12.jpg'
                         </svg>
                     </span>
                     CARRITO
-                    <span class="cart-count">0</span>
+                    <span class="cart-count">{{ cart.totalItems }}</span>
                 </a>
             </div>
         </div>
@@ -78,6 +66,21 @@ import logo from '../assets/12.jpg'
     </nav>
 </body>
 </template>
+
+<script setup>
+import { ref } from 'vue'
+
+defineProps({
+  msg: String,
+})
+
+const count = ref(0)
+import logo from '../assets/12.jpg'
+
+import { useCartStore } from '@/stores/cart'
+const cart = useCartStore()
+
+</script>
 
 <style scoped>
 .read-the-docs {

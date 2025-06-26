@@ -18,10 +18,14 @@ defineProps({
 <style scoped>
 .product-tabs {
   margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
   border-top: 1px solid #ccc;
   padding-top: 20px;
-  font-size: 14px;
-  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  color: #888888;
+  text-align: left;
 }
 .product-tabs h3 {
   margin-top: 20px;

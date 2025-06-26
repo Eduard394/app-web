@@ -5,14 +5,20 @@ export const useCartStore = defineStore('cart', {
         items: []
     }),
     actions: {
-        addToCart(product) {
-            this.items.push(product)
-        },
-        clearCart() {
-            this.items = []
+        addToCart(product, size) {
+            const exist = this.items.find(
+                item => item.product === product && item.talla === size
+            )
+            if (exist) {
+                exist.count++
+            } else {
+                this.items.push({ product, size, count: 1 })
+            }
         }
     },
     getters: {
-        itemCount: (state) => state.items.length
+        totalItems: (state) => {
+            return state.items.reduce((acc, item) => acc + item.count, 0)
+        }
     }
 })

@@ -3,7 +3,7 @@
     <router-link to="/about">Ir a About</router-link>
   </div> -->
   <Header msg="Vite + Vue" />
-  <detailProduct msg="Vite + Vue" />
+  <detailProduct />
   <complete-your-look/>
   <suggest-product/>
   <Footer />

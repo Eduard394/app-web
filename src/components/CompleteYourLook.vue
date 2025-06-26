@@ -1,3 +1,12 @@
+<template>
+  <section>
+    <h2 class="seccion">COMPLETA TU LOOK</h2>
+    <div class="contenedor">
+      <ProductCard v-for="shoe in shoes" :key="shoe.id" :item="shoe" />
+    </div>
+  </section>
+</template>
+
 <script setup>
 import ProductCard from './CardCompleteYourLook.vue'
 import { onBeforeMount } from 'vue'
@@ -41,18 +50,9 @@ const shoes = [
 })
 })
 </script>
-
-<template>
-  <section>
-    <h2 class="seccion">COMPLETA TU LOOK</h2>
-    <div class="contenedor">
-      <ProductCard v-for="shoe in shoes" :key="shoe.id" :item="shoe" />
-    </div>
-  </section>
-</template>
-
 <style scoped>
 .seccion {
+  margin-left: 40px;
   font-weight: bold;
   font-size: 15px;
   background-color: #eee;
