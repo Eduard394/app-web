@@ -1,7 +1,7 @@
 
 # Hush Puppies Web - Catalogo de Calzado
 
-Este proyecto es una tienda web de productos Hush Puppies, construida en **Vue 3** con **Vite** como bundler, utilizando **Pinia** para gestiÃ³n de estado, **TailwindCSS** para estilos, e integracion de assets locales para imagenes de productos.
+Este proyecto es una tienda web de productos Hush Puppies, construida en **Vue 3** con **Vite** como bundler, utilizando **Pinia** para gestion de estado, **TailwindCSS** para estilos, e integracion de assets locales para imagenes de productos.
 
 ## Requisitos
 
@@ -20,7 +20,7 @@ Este proyecto es una tienda web de productos Hush Puppies, construida en **Vue 3
 
 ---
 
-## Ã°ÂÂÂ Instalacion del proyecto
+## Instalacion del proyecto
 
 1. **Clonar el repositorio**
 
@@ -55,7 +55,7 @@ npm run dev
 
 ---
 
-## Ã°ÂÂÂ Estructura de carpetas
+## Estructura de carpetas
 
 ```
 src/
@@ -69,7 +69,7 @@ main.js
 
 ---
 
-## Ã°ÂÂÂ Notas adicionales
+## Notas adicionales
 
 - Las imagenes se importan dinamicamente con `import.meta.glob`, por lo tanto deben estar ubicadas en `src/assets` y ser .jpg.
 - Algunas funciones de recomendados (`productsSuggest`), producto aleatorio (`randomProduct`) y tallas (`getSizes`) provienen de los stores en `@/stores/`.
