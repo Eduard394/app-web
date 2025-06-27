@@ -1,23 +1,23 @@
 
-# Hush Puppies Web - Cat�logo de Calzado
+# Hush Puppies Web - Catálogo de Calzado
 
-Este proyecto es una tienda web de productos Hush Puppies, construida en **Vue 3** con **Vite** como bundler, utilizando **Pinia** para gestión de estado, **TailwindCSS** para estilos, e integración de assets locales para imágenes de productos.
+Este proyecto es una tienda web de productos Hush Puppies, construida en **Vue 3** con **Vite** como bundler, utilizando **Pinia** para gestión de estado, **TailwindCSS** para estilos, e integración de assets locales para imagenes de productos.
 
 ---
 
-## 🧰 Tecnologías y librerías utilizadas
+## Tecnologí­as y libreri­as utilizadas
 
 - [Vue 3](https://vuejs.org/)
 - [Vite](https://vitejs.dev/)
-- [Pinia](https://pinia.vuejs.org/) – State management
-- [Vue Router](https://router.vuejs.org/) – Navegación (opcional si aplica)
-- [Tailwind CSS](https://tailwindcss.com/) – Framework de estilos
-- [Vue3 Toastify](https://vue3-toastify.js.org/) – Notificaciones
-- `import.meta.glob` – Para carga dinámica de imágenes
+- [Pinia](https://pinia.vuejs.org/) â State management
+- [Vue Router](https://router.vuejs.org/) Navegación (opcional si aplica)
+- [Tailwind CSS](https://tailwindcss.com/) Framework de estilos
+- [Vue3 Toastify](https://vue3-toastify.js.org/) Notificaciones
+- `import.meta.glob` Para carga dinámica de imagenes
 
 ---
 
-## 🚀 Instalación del proyecto
+## ð Instalación del proyecto
 
 1. **Clonar el repositorio**
 
@@ -52,21 +52,21 @@ npm run preview
 
 ---
 
-## 📁 Estructura de carpetas
+## ð Estructura de carpetas
 
 ```
 src/
-├── assets/              # Imágenes de productos (ej: .jpg)
-├── components/          # Componentes reutilizables (ProductCard, ProductDetail, etc.)
-├── stores/              # Pinia stores (products, cart, sizes)
-├── views/               # Vistas principales (Home, Detail, etc.)
-├── App.vue
-└── main.js
+âââ assets/              # Imágenes de productos (ej: .jpg)
+âââ components/          # Componentes reutilizables (ProductCard, ProductDetail, etc.)
+âââ stores/              # Pinia stores (products, cart, sizes)
+âââ views/               # Vistas principales (Home, Detail, etc.)
+âââ App.vue
+âââ main.js
 ```
 
 ---
 
-## 📝 Notas adicionales
+## ð Notas adicionales
 
 - Las imágenes se importan dinámicamente con `import.meta.glob`, por lo tanto deben estar ubicadas en `src/assets` y ser .jpg.
 - Algunas funciones de recomendados (`productsSuggest`), producto aleatorio (`randomProduct`) y tallas (`getSizes`) provienen de los stores en `@/stores/`.
@@ -74,7 +74,7 @@ src/
 
 ---
 
-## 📦 Dependencias clave
+##  Dependencias clave
 
 ```bash
 npm install vue@^3
@@ -110,7 +110,7 @@ En `src/assets/index.css`:
 @tailwind utilities;
 ```
 
-Y asegúrate de importarlo en `main.js`:
+Y asegurate de importarlo en `main.js`:
 
 ```js
 import './assets/index.css'
@@ -118,20 +118,13 @@ import './assets/index.css'
 
 ---
 
-## 📷 Captura de pantalla
-
-![UI de productos recomendados](./src/assets/screenshot.jpg)
-
----
-
-## 🧑‍💻 Autor
+## Autor
 
 **Eduard Legarda**  
 Desarrollador Frontend  
-[GitHub](https://github.com/tu-usuario)
 
 ---
 
-## 📄 Licencia
+## Licencia
 
-MIT © 2025
+MIT año 2025
