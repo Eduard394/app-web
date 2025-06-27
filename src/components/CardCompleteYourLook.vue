@@ -1,20 +1,18 @@
 <template>
   <div class="card">
-    <img :src="item.imagenSrc" :alt="item.nombre" class="imagen" />
-
-    <div class="variantes">
-      <img
-        v-for="(color, i) in item.variantes"
+    <img :src="item.imagenSrc" :alt="item.nombre" class="imagen-principal" />
+    <div class="miniaturas">
+      <div
+        v-for="(color, i) in colores"
         :key="i"
-        :src="color"
-        alt="variante"
         class="miniatura"
-      />
+        :style="{ backgroundColor: color }"
+      >
+        <img :src="item.imagenSrc" alt="variante" class="miniatura-img" />
+      </div>
     </div>
-
     <p class="nombre">{{ item.nombre }}</p>
     <p class="precio">{{ item.precio }}</p>
-
     <button class="boton">AGREGAR AL CARRITO</button>
   </div>
 </template>
@@ -23,66 +21,76 @@
 defineProps({
   item: Object
 })
+
+const colores = ['#444', '#1e88e5', '#8e24aa', '#f2690a']
 </script>
 
 <style scoped>
 .card {
   width: 300px;
-  min-height: auto;
-  background-color: white;
-  /* border: 1px solid #ddd; */
-  border-radius: 5px;
-  padding: 1rem 0.5rem;
+  background: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
+  align-items: center;
+  padding: 10px;
   text-align: center;
 }
 
-.imagen {
+.imagen-principal {
   width: 100%;
   height: 140px;
   object-fit: contain;
-  display: block;
-  margin: 0 auto;
   background-color: #f9f9f9;
+  margin-bottom: 8px;
 }
 
-.variantes {
+.miniaturas {
   display: flex;
   justify-content: center;
-  gap: 4px;
-  margin-bottom: 0.5rem;
+  gap: 6px;
+  margin-bottom: 10px;
 }
 
 .miniatura {
-  width: 22px;
-  height: 22px;
-  border: 1px solid #ccc;
+  width: 26px;
+  height: 26px;
   border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.miniatura-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.95;
 }
 
 .nombre {
   font-size: 14px;
   font-weight: 500;
-  min-height: 32px;
+  color: #333;
+  margin: 5px 0;
 }
 
 .precio {
-  font-size: 14px;
-  color: #800000;
+  font-size: 15px;
   font-weight: bold;
+  color: #773b47;
+  margin: 4px 0 12px;
 }
 
 .boton {
-  margin-top: 0.5rem;
   background-color: #5c2b3b;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 10px 0;
   font-size: 13px;
   cursor: pointer;
   width: 100%;
+  border-radius: 2px;
 }
 </style>

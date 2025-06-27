@@ -19,25 +19,25 @@
     },
     {
         "nombre": "Zapato gris",
-        "precio": 5000,
+        "precio": 6000,
         "referencia": "G40",
         "foto": "4.jpg"
     },
     {
         "nombre": "Zapato cafe",
-        "precio": 5000,
+        "precio": 7000,
         "referencia": "G40",
         "foto": "5.jpg"
     },
     {
         "nombre": "Zapato miel",
-        "precio": 5000,
+        "precio": 900,
         "referencia": "G40",
         "foto": "6.jpg"
     },
     {
         "nombre": "Zapato aguamarina",
-        "precio": 5000,
+        "precio": 3000,
         "referencia": "G40",
         "foto": "7.jpg"
     },

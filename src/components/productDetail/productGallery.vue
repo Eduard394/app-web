@@ -3,6 +3,10 @@
     <div class="main-image-container">
       <img :src="selectedImage" class="main-image" />
     </div>
+
+    <!-- Línea divisoria -->
+    <hr class="divider" />
+
     <div class="thumbnails">
       <div
         class="thumbnail-container"
@@ -16,6 +20,7 @@
     </div>
   </div>
 </template>
+
 
 <script setup>
 import { ref, watch } from 'vue'
@@ -79,5 +84,11 @@ watch(() => props.images, (newImgs) => {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.divider {
+  margin: 30px auto 15px;
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 80%;
 }
 </style>

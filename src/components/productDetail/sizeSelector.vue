@@ -13,6 +13,10 @@
     >
       {{ size.talla }}
     </button>
+    <div class="size-guide">
+      GUÍA DE TALLAS
+    </div>
+
   </div>
 </template>
 
@@ -74,5 +78,15 @@ function selectSize(talla) {
   color: #999;
   border-color: #ccc;
   cursor: not-allowed;
+}
+
+.size-guide {
+  font-weight: bold;
+  color: #757575; /* Gris similar al de la imagen */
+  text-transform: uppercase;
+  font-size: 16px;
+  display: inline-block;
+  border-bottom: 2px solid #bdbdbd; /* Subrayado gris claro */
+  padding-bottom: 3px;
 }
 </style>

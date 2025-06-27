@@ -12,7 +12,7 @@ export const useSizesStore = defineStore('sizes', {
     },
     getters: {
         getSizes() {
-            console.log("aca entreerer-...........")
+            console.log("en store de sizes")
             return this.sizes
         }
     }

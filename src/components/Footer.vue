@@ -49,12 +49,12 @@
     <div class="footer-bottom">
       <span>Desarrollado por:</span>
       <!-- <img src="/images/rise.png" alt="rise" />
-      <span>Tecnología:</span>
+      <span>TecnologÃ­a:</span>
       <img src="/images/vtex.png" alt="vtex" />
       <span>Certificado por:</span>
       <img src="/images/pcidss.png" alt="pci" />
       <img src="/images/digicert.png" alt="digicert" />
-      <span>Métodos de pago:</span>
+      <span>MÃ©todos de pago:</span>
       <img src="/images/visa.png" alt="visa" />
       <img src="/images/payu.png" alt="payu" />
       <img src="/images/baloto.png" alt="baloto" />
@@ -102,6 +102,7 @@
 }
 
 .footer-main {
+  background-color: #f9f9f9;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;

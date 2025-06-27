@@ -7,12 +7,14 @@ export const useProductsStore = defineStore('products', {
     }),
     actions: {
         loadProducts() {
+            console.log('cargando productos..')
             this.products = zapatosJson
         }
     },
     getters: {
         productsCount: (state) => state.products.length,
         randomProduct: (state) => {
+            console.log('en getters... ramdom')
             if (state.products.length === 0) return null
             const index = Math.floor(Math.random() * state.products.length)
             return state.products[index]
