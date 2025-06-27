@@ -22,7 +22,7 @@ Este proyecto es una tienda web de productos Hush Puppies, construida en **Vue 3
 1. **Clonar el repositorio**
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repo.git
+git clone https://github.com/Eduard394/app-web.git
 cd tu-repo
 ```
 
