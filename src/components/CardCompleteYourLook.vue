@@ -13,7 +13,7 @@
     </div>
     <p class="nombre">{{ item.nombre }}</p>
     <p class="precio">{{ item.precio }}</p>
-    <button class="boton">AGREGAR AL CARRITO</button>
+    <button class="boton" @click="addCart">AGREGAR AL CARRITO</button>
   </div>
 </template>
 
@@ -21,8 +21,11 @@
 defineProps({
   item: Object
 })
-
+const emit = defineEmits(['addProductToCartLook'])
 const colores = ['#444', '#1e88e5', '#8e24aa', '#f2690a']
+const addCart = () => {
+  emit('addProductToCartLook', { product: 'initials.name', talla: 'tallaSeleccionada.value' })
+}
 </script>
 
 <style scoped>

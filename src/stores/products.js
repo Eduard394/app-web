@@ -19,6 +19,19 @@ export const useProductsStore = defineStore('products', {
             const index = Math.floor(Math.random() * state.products.length)
             return state.products[index]
         },
+        productsCompleteYourLook: (state) => {
+            return (n = 4) => {
+                const copia = [...state.products]
+                const randoms = []
+
+                while (randoms.length < n && copia.length > 0) {
+                    const index = Math.floor(Math.random() * copia.length)
+                    randoms.push(copia.splice(index, 1)[0])
+                }
+
+                return randoms
+            }
+        },
         productsSuggest: (state) => {
             return (n = 4) => {
                 const copia = [...state.products]

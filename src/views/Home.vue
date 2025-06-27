@@ -1,16 +1,17 @@
 <template>
   <Header msg="Vite + Vue" />
   <ProductDetail :product="productItem" />
-  <CompleteYourLook :shoes="shoes" />
-  <SuggestProduct/>
+  <CompleteYourLook :shoes="completeYourLook" />
+  <ProductSuggest :shoes="productsSuggest" />
+  <!-- <SuggestProduct/> -->
   <Footer />
 </template>
 
 <script setup>
   import Header from '../components/Header.vue'
   import ProductDetail from '../components/DetailProduct.vue'
-  import SuggestProduct from '../components/SuggestProduct.vue'
-  import Footer from '../components/Footer.vue'
+  import ProductSuggest from '../components/ProductSuggest.vue'
+  import Footer from '../components/FooterV2.vue'
   import CompleteYourLook from '../components/CompleteYourLook.vue'
 
 
@@ -24,8 +25,9 @@
   const productsStore = useProductsStore()
   const sizesStore = useSizesStore()
 
-  const completeYourLook = ref([])
   const shoes = ref([])
+  const completeYourLook = ref([])
+  const productsSuggest = ref([])
   const productItem = ref(null)
 
   onBeforeMount ( async() => {
@@ -49,8 +51,8 @@
     }
 
     // completa tu look
-    completeYourLook.value = productsStore.productsSuggest(4)
-    shoes.value = completeYourLook.value.map(shoe => {
+    completeYourLook.value = productsStore.productsCompleteYourLook(4)
+    completeYourLook.value = completeYourLook.value.map(shoe => {
       const match = Object.entries(imagenes).find(([key]) =>
         key.endsWith(`/${shoe.foto}`)
       )
@@ -59,5 +61,19 @@
         imagenSrc: match ? match[1] : ''
       }
     })
+    
+    // productos recomendados
+    productsSuggest.value = productsStore.productsSuggest(8)
+    productsSuggest.value = productsSuggest.value.map(shoe => {
+      const match = Object.entries(imagenes).find(([key]) =>
+        key.endsWith(`/${shoe.foto}`)
+      )
+      return {
+        ...shoe,
+        imagenSrc: match ? match[1] : ''
+      }
+    })
+    console.log(productsSuggest)
+    console.log('productsSuggest')
   })
 </script>

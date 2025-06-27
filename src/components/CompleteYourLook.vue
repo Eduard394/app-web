@@ -2,13 +2,15 @@
   <section>
     <h2 class="seccion">COMPLETA TU LOOK</h2>
     <div class="contenedor">
-      <ProductCard v-for="shoe in shoes" :key="shoe.id" :item="shoe" />
+      <ProductCard v-for="shoe in shoes" :key="shoe.id" :item="shoe" @addProductToCartLook="handleAddTocartLook"/>
     </div>
   </section>
 </template>
 
 <script setup>
 import ProductCard from './CardCompleteYourLook.vue'
+import { toast } from 'vue3-toastify'
+import { useCartStore } from '@/stores/cart'
 
 defineProps({
   shoes: {
@@ -16,6 +18,11 @@ defineProps({
     required: true
   }
 })
+const cartStore = useCartStore()
+const handleAddTocartLook = (itemProduct) => {
+  cartStore.addToCart(itemProduct)
+  toast.success('Producto agregado')
+}
 </script>
 
 <style scoped>

@@ -20,7 +20,7 @@
         <!-- LOGO -->
         <div class="logo-section">
           <img :src="logo" alt="Logo" class="logo-img" />
-          <div class="logo-text">Hush Puppies<span class="registered">®</span></div>
+          <div class="logo-text">Hush Puppies<span class="registered">Â®</span></div>
         </div>
 
         <!-- SEARCH + INFO -->
